@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "phuniverse.vinyl",
+  "name": "Vinyl",
+  "version": "1.0.0",
+  "author": "Alvaro Mendez",
+  "license": "MIT",
+  "description": "A thin-line vinyl record that spins while the computer plays sound, with a live sound wave running out of the stylus and media controls on hover",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Vinyl",
+    "description": "Spinning record + sound wave driven by the default output's level",
+    "category": "Media",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "schema": [
+      { "key": "waveLength", "type": "integer", "label": "Wave length (px)", "min": 16, "max": 120, "step": 2, "defaultValue": 44 },
+      { "key": "lineWidth", "type": "number", "label": "Line width", "min": 0.5, "max": 2, "step": 0.25, "defaultValue": 1 },
+      { "key": "sensitivity", "type": "number", "label": "Sensitivity", "min": 0.5, "max": 4, "step": 0.25, "defaultValue": 1.5 }
+    ]
+  }
+}
